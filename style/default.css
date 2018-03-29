@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+section{
+    position: absolute;
+    width: 100%;
+    padding:20px;
+    -moz-transition: left 400ms linear 0s;
+    -webkit-transition: left 400ms linear 0s;
+    -ms-transition: left 400ms linear 0s;
+    transition: left 400ms linear 0s;
+    border: solid 1px #000;
+}
+section { left: -150%; }
+section[aria-selected] { left: 0; }
+section[aria-selected] ~ section { left: +150%; }
